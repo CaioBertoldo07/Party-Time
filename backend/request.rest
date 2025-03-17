@@ -1,0 +1,90 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum serviç 2",
+    "description": "Alguma descrição",
+    "price": 1600,
+    "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f250d.jpg"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/67d850e76c64ccdbe6fdb90d
+
+###
+DELETE http://localhost:3000/api/services/67d850e76c64ccdbe6fdb90d
+
+###
+PUT http://localhost:3000/api/services/67d8527e34c4b4935d3ae127
+Content-Type: application/json
+
+{
+    "name": "TESTE ATUALIZAÇÃO",
+    "description": "Alguma descrição",
+    "price": 2500,
+    "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f250d.jpg"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Dominó",
+    "author": "Caio Bertoldo",
+    "description": "Dominó na casa do Isaac",
+    "budget": 2000,
+    "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f2",
+    "services": [
+        {
+            "name": "Algum serviço 01",
+            "description": "lepo lepo",
+            "price": 3000,
+            "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f250d.jpg"
+        },
+        {
+            "name": "Algum serviço 02",
+            "description": "bla bla",
+            "price": 1600,
+            "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f250d.jpg"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/67d8660bc56de91ee36addc6
+
+###
+DELETE  http://localhost:3000/api/parties/67d8660bc56de91ee36addc6
+
+###
+PUT http://localhost:3000/api/parties/67d866dac56de91ee36addc8
+Content-Type: application/json
+
+{
+    "title": "Dominó 2",
+    "author": "Isaac Anijar",
+    "description": "Dominó na casa do Isaac",
+    "budget": 2000,
+    "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f2",
+    "services": [
+        {
+            "name": "Algum serviço 01",
+            "description": "lepo lepo",
+            "price": 3000,
+            "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f250d.jpg"
+        },
+        {
+            "name": "Algum serviço 02",
+            "description": "bla bla",
+            "price": 1600,
+            "image": "https://i.pinimg.com/1200x/d0/5a/52/d05a52d68dc2faa9e6cbdc538a8f250d.jpg"
+        }
+    ]
+}
